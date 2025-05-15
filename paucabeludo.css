@@ -1,0 +1,11 @@
+body{
+    text-align:center
+}
+input{
+    width:200px
+}
+
+::placeholder{
+    text-align: center
+
+}
