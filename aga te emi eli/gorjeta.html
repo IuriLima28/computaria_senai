@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: pink;
+
+        }
+    </style>
+    <h1 style="text-align: center; box-shadow: 1px 20px 10px purple; text-shadow: 0 0 5px #ff236d;">BEM VINDO AO SITE MAIS LGBT</h1>
+    <div>
+        <div>
+            <label for="valorConta">Valor da Conta (R$):</label>
+            <input type="number" id="valorConta" placeholder="Digite o numero: ">           
+        </div>
+
+        <div>
+            <label for="qualidadeServiço">Qualidade de Serviço:</label>
+            <select id="qualidadeServiço">
+                <option value="0.05">Ruim 5%</option>
+                <option value="0.10">Pior 10%</option>
+                <option value="0.20">Mediana 20%</option>
+                <option value="0.50">Boa 50%</option>
+
+            </select>
+
+        </div>
+    </div>
+     
+</body>
+<script>
+    let valorconta = 0
+    let porcentagem = 0
+    let totalGorjeta = 0
+    function calcularGorjeta(){
+        valorconta = parseFloat(document.getElementById(valorConta).value)
+        porcentagem = parseFloat(document.getElementId("qualidade"))
+        totalGorjeta = valorconta + valorconta * porcentagem;
+
+        const campoGorjeta = document.getElementById('valorgorjeta');
+        campoGorjeta.innerHTML = 'Valor da gorjeta: R$ $(totalGorjeta.toFix)'
+
+
+
+
+    }
+</script>
+</html>
