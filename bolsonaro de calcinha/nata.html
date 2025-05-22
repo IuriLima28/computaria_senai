@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE DE BAITOLAGEM</title>
+    <style>
+        h1 {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>TESTE DE BOIOLICE</h1>
+
+    <div>
+        <h2>1: Qual sua cor favorita?</h2>
+        <input type="checkbox" id="corRosa"> Rosa<br>
+        <input type="checkbox" id="corAzul"> Azul<br>
+        <input type="checkbox" id="corAmarelo"> Amarelo<br>
+    </div>
+
+    <div>
+        <h2>2: Qual dessas pessoas é mais legal?</h2>
+        <input type="checkbox" id="ladyGaga"> Lady Gaga<br>
+        <input type="checkbox" id="mj"> Michael Jackson<br>
+        <input type="checkbox" id="neymar"> Neymar<br>
+    </div>
+
+    <div>
+        <h2>3: Qual seu estilo de música?</h2>
+        <input type="checkbox" id="bts"> BTS<br>
+        <input type="checkbox" id="guns"> Guns and Roses<br>
+        <input type="checkbox" id="acdc"> AC/DC<br>
+    </div>
+
+    <div>
+        <h2>4: Qual shampoo você usa?</h2>
+        <input type="checkbox" id="cr7"> Shampoo do CR7<br>
+        <input type="checkbox" id="delicado"> Shampoo especializado para cabelos delicados<br>
+        <input type="checkbox" id="detergente"> Detergente<br>
+    </div>
+
+    <div>
+        <h2>5: Sua mãe sabe que você gosta de rapazes?</h2>
+        <input type="checkbox" id="sim"> Sim<br>
+        <input type="checkbox" id="nao"> Ainda não<br>
+        <input type="checkbox" id="depois"> Vou contar depois<br>
+    </div>
+
+    <button onclick="verificar()">ENVIAR</button>
+
+    <script>
+        function verificar() {
+            let score = 0;
+
+            // Contagens por preferência
+            if (document.getElementById("corRosa").checked) score++;
+            if (document.getElementById("ladyGaga").checked) score++;
+            if (document.getElementById("bts").checked) score++;
+            if (document.getElementById("delicado").checked) score++;
+
+            // Pergunta 5 – qualquer resposta aciona alerta
+            if (
+                document.getElementById("sim").checked ||
+                document.getElementById("nao").checked ||
+                document.getElementById("depois").checked
+            ) {
+                alert("VIADOOOOOOOOOOOOOOOO! 🌈");
+                return;
+            }
+
+            if (score > 3) {
+                alert("BAITA BAITOLÃO MORDE FRONHA!");
+            } else {
+                alert("CABRA MACHO!");
+            }
+        }
+    </script>
+
+</body>
+</html>

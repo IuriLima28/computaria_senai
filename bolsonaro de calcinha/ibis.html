@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function calcularMedia(){
+        var nota1 = parseFloat(document.getElementById("Nota1").value) 
+        var nota2 = parseFloat(document.getElementById("Nota2").value)
+        var nota3 = parseFloat(document.getElementById("Nota3").value)
+        var media = (nota1 + nota2 + nota3)/3
+        alert("a media é "+media.toFixed(2))
+    }
+
+</script>
+<body>
+    <input type="number" id="Nota1" placeholder="Digite a nota do primeiro trimestre" style="width:250px">
+    <br>
+    <input type="number" id="Nota2" placeholder="Digite a nota do segundo trimestre" style="width:250px">
+    <br>
+    <input type="number" id="Nota3" placeholder="Digite a nota do terceiro trimestre" style="width:250px">
+    <br>
+    <button onclick="calcularMedia()">Calcular média</button>
+    
+</body>
+</html>
