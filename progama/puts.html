@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragrafo">Um paragrafo</p>
+
+
+<p class="paragrafozao">Paragrafo 1</p>
+<p class="paragrafozao">Paragrafo 2</p>
+
+<div id="lista">Item 1</div>
+<button onclick="adicionarItem()">ADICIONAR</button>
+
+</body>
+<script>
+    // pegando por ID
+    const parag = document.getElementById(".paragrafo");
+    console.log(parag);
+
+    // pegando por class
+    const classes = document.querySelector(".paragrafozao");
+    console.log(classes);
+
+    const classes_todos = document.querySelectorAll(".paragrafozao");
+    console.log(classes_todos);
+
+    let numero = Number(prompt("Digite um numero: "));
+
+    if ( numero == 1){
+        console.log(classes_todos[0].textContent);
+    } else if (numero == 2){
+        console.log(classes_todos[1].textContent);
+    } else{
+        console.log("ERRO!!!!");
+    }
+
+
+    parag.textContent = "Um novo paragrafo";
+    parag.innerHTML = "Um novo NOVO paragrafo";
+
+    parag.style.color = "blue";
+    parag.style.textShadow = "crimson";
+    parag.style.backgroundColor = "black";
+
+
+    function adicionarItem(){
+        const item = document.createElement("p");
+        item.textContent = "Textão";
+        document.getElementById("lista").appendChild(item);
+        console.log(item);
+
+    }
+</script>
+</html>
