@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Salario bruto" id=bruto>
+    <button onclick="liquido()">CLIQUE AUI</button>
+</body>
+<script>
+    function liquido(){
+    var bruto = parseFloat(document.getElementById("bruto").value)
+    var liquido = bruto - (bruto*0.1)
+    alert("Seu salario liquido é "+liquido) 
+}
+</script>
+</html>

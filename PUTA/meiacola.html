@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="latas">latas
+    <br>
+    <input type="number" id="garrafas">garrafa
+    <br>
+    <input type="number" id="litraos">litrao
+    <br>
+    <button onclick="nome()">Calcular</button>
+    
+</body>
+<script>
+    function nome(){
+    var lata = parseFloat(document.getElementById("latas").value)
+    var garrafa = parseFloat(document.getElementById("garrafas").value)
+    var litrao = parseFloat(document.getElementById("litraos").value)
+    lata = 350*lata
+    garrafa = 600*garrafa
+    litrao=2000*litrao
+    total = litrao+garrafa+lata
+    alert("Você comprou ao total "+total+" mililitros.")}
+
+</script>
+</html>

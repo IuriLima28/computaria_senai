@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type=text placeholder="Escreva a temperatura em celsius" id="celsius">
+    <button onclick="conversão()">TRANSFORMAR</button>
+
+
+</body>
+<script>
+    function conversão(f){
+        var c = parseFloat(document.getElementById("celsius").value) 
+        var f = (c * 9/5) + 32
+        alert("A temperatura em fahrenheit é "+f)
+    }
+</script>
+</html>
