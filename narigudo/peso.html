@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:blue; text-shadow: 50px;">Calculador de Idade</h1>
+    <input type="number" placeholder="Altura" id="alturas">
+    <br>
+    <input type="text" id="sexo" placeholder="Sexo">
+    <br>
+    <button onclick="ideal()">Calcukar</button>
+    
+</body>
+<script>
+    function ideal(){
+        var altura = parseFloat(document.getElementById("alturas").value)
+        var genero = parseFloat(document.getElementById("sexo").value)
+        if (sexo = "M" || "Masculino" || "m" || "masculino"){
+            var ideal = 22 * (altura*altura)}
+        if (sexo = "F" || "Feminino" || "f" || "feminino"){
+            var ideal = 21 * (altura*altura)
+        }
+        alert("Peso ideal é "+ideal)
+
+    }
+</script>
+</html>
