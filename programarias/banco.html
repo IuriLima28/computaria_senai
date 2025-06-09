@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var saldo = Number(prompt("Digite seu saldo médio: "))
+    var credito = 0
+    if (saldo < 200){
+        alert("Sem credito especial!")
+    }
+    else if (saldo >= 201 && saldo <= 400){
+        credito = saldo*0.20
+    }
+    else if(saldo >= 401 && saldo <= 600){
+        credito = saldo*0.30
+    }
+    else{
+        credito = saldo*0.40
+    }
+    alert("O seu credito especial é "+credito)
+
+</script>
+</html>
