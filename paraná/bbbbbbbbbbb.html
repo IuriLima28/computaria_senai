@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="palpite" type="number" placeholder="palpite">
+    <br>
+    <button onclick="jogar()">Palpitar</button>
+    
+</body>
+<script>
+var certo = false
+var limite = Math.random(1,100)
+function jogar(){
+while (certo == false){
+    palpite = document.getElementById("palpite").value
+    sera = confirm("Numero maior que"+limite+"?")
+    if(sera){
+        var minimo = limite
+    }
+    else{
+        var maximo = limite
+    }
+    var limite = Math.random(minimo,maximo)
+    if(maximo == minimo){
+        alert("Seu numero é "+maximo)
+    }
+}}
+
+
+</script>
+</html>
