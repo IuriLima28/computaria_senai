@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="Number" placeholder="Homem 1" id="homemum">
+    <input type="Number" placeholder="Homem 2" id="homemdois">
+    <input type="Number" placeholder="Mulher 1" id="mulherum">
+    <input type="Number" placeholder="Mulher 2" id="mulherdois">
+    <button onclick="idade()">Calcular</button>
+    <br>
+    <br>
+    <img src="https://wallpapers.com/images/hd/funny-rat-pictures-omwey2jzogey3220.jpg" height="500px" width="500px">
+
+</body>
+<script>
+    function idade(){
+    var homem1 = Number(document.getElementById("homemum").value);
+    var homem2 = Number(document.getElementById("homemdois").value);
+    var mulher1 = Number(document.getElementById("mulherum").value);
+    var mulher2 = Number(document.getElementById("mulherdois").value);
+    if (mulher1 > mulher2){
+        mVelha = mulher1
+        mNova = mulher2
+    }
+    else{
+        mVelha = mulher2
+        mNova = mulher1
+    }
+
+    if(homem1 > homem2){
+        hVelho = homem1
+        hNovo = homem2
+    }
+    else{
+        hVelho = homem2
+        hNovo = homem1
+    }
+    alert("Homem mais velho e mulher mais nova: "+(hVelho+mNova))
+    alert("Mulher mais velha e homem mais novo: "+(mVelha+hNovo))
+}
+
+
+
+
+</script>
+</html>
