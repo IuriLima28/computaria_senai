@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="x">
+    <input type="number" id="y">
+    <button onclick="diferenca()">Calcular</button>
+</body>
+<script>
+    function diferenca(){
+    var x = Number(document.getElementById("x").value);
+    var y = Number(document.getElementById("y").value);
+    if(x>y){
+        alert(x-y)
+    }
+    else{
+        alert(y-x)
+    }
+
+    }
+</script>
+</html>

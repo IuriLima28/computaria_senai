@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site de cria</title>
+</head>
+<body>
+    <input type="number" placeholder="Litros" id="litros" min="0">
+    <select id="tipo">
+        <option>Alcool</option>
+        <option>Gasolina</option>
+    </select>
+    <button onclick="preco()">Calcular</button>
+
+    <script>
+        function preco() {
+            var litro = Number(document.getElementById("litros").value);
+            var tipo = document.getElementById("tipo").value;
+            var precoG = 5.15;
+            var precoA = 4.29;
+            var total = 0;
+
+            if (tipo === "Gasolina") {
+                if (litro < 21) {
+                    total = litro * precoG * 0.96
+                } else {
+                    total = litro * precoG * 0.94
+                }
+            } else if (tipo === "Alcool") {
+                if (litro < 21) {
+                    total = litro * precoA * 0.97
+                } else {
+                    total = litro * precoA * 0.95
+                }
+            }
+
+            alert("Preço total: R$ " + total.toFixed(2));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="idade" placeholder="idade">
+    <input type="number" id="altura" step="0.01" placeholder="altura">
+    <input type="number" id="peso" placeholder="quilos">
+    <button onclick="toboga()">Tobogã</button>
+
+</body>
+<script>
+function toboga(){
+var idade= Number(document.getElementById("idade").value);
+var altura= Number(document.getElementById("altura").value);
+var peso= Number(document.getElementById("peso").value);
+
+if(idade > 12 && altura > 1.50 && peso > 50 && peso < 120){
+    alert("Pode brincar!")
+}
+else{
+    alert("Não pode.")
+}
+
+
+
+}
+</script>
+
+</html>

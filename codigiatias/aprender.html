@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="nivel" min="1" max="3" placeholder="nivel">
+    <input type="number" min="1" max="8" placeholder="horas" id="horas">
+    <select id="forma">
+        <option>Dia</option>
+        <option>Semana</option>
+        <option>Mês</option>
+    </select>
+    <button onclick="calcular()">Pagamento</button>
+
+
+</body>
+<script>
+    function calcular(){
+    var nivel= Number(document.getElementById("nivel").value);
+    var horas = Number(document.getElementById("horas").value);
+    var forma = document.getElementById("forma").value
+    if(nivel==1){
+        var resultado = 12.00*horas
+    }
+    else if (nivel == 2){
+        var resultado = 17.00*horas
+    }
+    else{
+        var resultado = 25.00*horas
+    }
+    switch(forma){
+        case "Dia": alert("Pagamento: "+resultado+",00")
+        break
+        case "Semana": alert("Pagamento: "+(resultado*6)+",00")
+        break
+        case "Mês": alert("Pagamento: "+(resultado*22+",00"))
+    }
+
+
+        
+    }
+</script>
+</html>
