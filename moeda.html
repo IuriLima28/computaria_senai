@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="girar()">Girar moeda</button>
+    <div id="moeda"></div>
+    <script>
+        let interface = document.getElementById("moeda");
+
+        function getRandomInt(min, max) {
+            min = Math.ceil(1);
+            max = Math.floor(10);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function girar() {
+            let coc = getRandomInt(1, 10);
+            if (coc % 2 === 0) {
+                interface.innerHTML = "<img src='https://www.moedasdobrasil.com.br/moedas/images/moedas1/A00574A.JPG'>"
+            } else {
+                interface.innerHTML = "<img src='https://www.moedasdobrasil.com.br/moedas/images/moedas1/R00574A.JPG'>";
+            }
+        }
+    </script>
+</body>
+</html>
