@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: red;">TESTE PARA VER SE VOCÊ É</h1>
+    <span style="color:#FF0000">B</span><span style="color:#FFDB00">A</span><span style="color:#49FF00">I</span><span style="color:#00FF92">T</span><span style="color:#0092FF">O</span><span style="color:#4900FF">L</span><span style="color:#FF00DB">A</span>
+    <br>
+    <h2 style="text-decoration: underline;">Pergunta um: Qual sua cor favorita?</h2>
+    <select name="R1">
+        <option value = "gay">Rosa</option>
+        <option value = "meio">Roxo</option>
+        <option value = "hetero">Preto</option>
+        <option value = "hetero">Azul</option>
+    </select>
+    <h2 style="text-decoration: underline;">Pergunta dois: Qual seu famoso favorito?</h2>
+    <select name="R2">
+        <option value = "hetero">Chuck Norris</option>
+        <option value = "meio">Bruno Mars</option>
+        <option value = "gay">Taylor Swift</option>
+        <option value = "hetero">Adam Sandler</option>
+    </select>
+    <h2 style="text-decoration: underline;">Pergunta três: Qual sua banda favorita?</h2>
+    <select name="R3">
+        <option value = "meio">Imagine Dragons</option>
+        <option value = "hetero">Queen</option>
+        <option value = "gay">BTS</option>
+        <option value = "hetero">Guns and Roses</option>
+    </select>
+    <h2 style="text-decoration: underline;">Pergunta quatro: Qual seu curso?</h2>
+    <select name="R4">
+        <option value = "hetero">Mecanica</option>
+        <option value = "gay">Multimidia</option>
+        <option value = "meio">Desenvolvimento de Sistema V1</option>
+        <option value = "hetero">Desenvolvimento de Sistema V2</option>
+    </select>
+    <h2 style="text-decoration: underline;">Pergunta cinco: Qual seu partido politico?</h2>
+    <select name="R5">
+        <option value = "meio">🇵🇹</option>
+        <option value = "hetero">Bolsonaro com peixe</option>
+        <option value = "hetero">Peixe com bolsonaro</option>
+        <option value = "gay">🏳️‍🌈</option>
+    </select>
+    <br>
+    <br>
+
+    <button onclick="baitometro()">Baitometro</button>
+</body>
+<style>
+    span{
+        font-size:100px
+    }
+</style>
+<script>
+    let pontuacao = 0
+    function baitometro(){
+    let pontuacao = 0
+    let resposta1 = document.getElementsByName("R1")[0].value
+    if (resposta1 == "gay"){
+        pontuacao = pontuacao + 100
+    }
+    else if(resposta1 == "meio"){
+        pontuacao = pontuacao + 50
+    }
+    else{
+        pontuacao = pontuacao + 0
+    }
+
+    let resposta2 = document.getElementsByName("R2")[0].value
+    if (resposta2 == "gay"){
+        pontuacao = pontuacao + 100
+    }
+    else if(resposta2 == "meio"){
+        pontuacao = pontuacao + 50
+    }
+    else{
+        pontuacao = pontuacao + 0
+    }
+
+    let resposta3 = document.getElementsByName("R3")[0].value
+    if (resposta3 == "gay"){
+        pontuacao = pontuacao + 100
+    }
+    else if(resposta3 == "meio"){
+        pontuacao = pontuacao + 50
+    }
+    else{
+        pontuacao = pontuacao + 0
+    }
+
+    let resposta4 = document.getElementsByName("R4")[0].value
+    if (resposta4 == "gay"){
+        pontuacao = pontuacao + 100
+    }
+    else if(resposta4 == "meio"){
+        pontuacao = pontuacao + 50
+    }
+    else{
+        pontuacao = pontuacao + 0
+    }
+
+    let resposta5 = document.getElementsByName("R5")[0].value
+    if (resposta5 == "gay"){
+        pontuacao = pontuacao + 100
+    }
+    else if(resposta5 == "meio"){
+        pontuacao = pontuacao + 50
+    }
+    else{
+        pontuacao = pontuacao + 0
+    }
+
+
+if(pontuacao < 200){
+    alert("CABRA MACHO!")
+}
+else if(pontuacao >200 && pontuacao < 300){
+    alert("FRANGOTE!")
+}
+else{
+    alert("MORDE FRONHA!")
+}
+}
+
+</script>
+</html>
