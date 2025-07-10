@@ -1,0 +1,179 @@
+Tensão                           Resistor                         Corrente
+9V                               100 (símbolo do kratos)          90 mA
+9V                               200                              45mA
+9V                               400                              27,5mA
+9V                               50                               150 mA
+
+
+
+lei de ohm:
+I = V/R [A]
+V = R/I [V]
+R = V/I [símbolo do kratos]
+
+
+
+
+
+
+
+
+
+Exemplo 1
+pra descobrir o valor da corrente usa I = V/R [A]
+V = 6V
+R = 120
+I = ?
+
+I = 6/120
+I = 0,05
+
+
+
+Exemplo 2
+R = 9/0,3
+R= 30 (símbolo do kratos)
+
+
+
+
+Exemplo 3
+V = R*1
+V = 22000*0,1
+V = 2.200
+
+
+quizzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+1) V/R [A]
+
+2) V/R [A]
+V = R/I [V]
+R = V/I [símbolo do kratos]
+
+3) a) I = 5/330
+0.01515151515 A
+
+b) R = 30/0,2
+R = 150 (símbolo do kratos)
+
+c) V = 1,2 / 0,015
+v = 80V
+
+d) V = 200 / 0,3
+V = 666,6V
+
+e) R = 12 / 0,00125
+R = 9600 (símbolo do kratos)
+
+f) I = 60/680
+I = 0.08823529411 (símbolo do kratos)
+
+
+
+
+
+formula da potencia
+
+P = V * I [W]
+
+
+Exemplo
+
+V = 6V
+I = 0,5A
+
+P = 6 * 0,5
+P = 3
+
+
+
+
+outras formulas
+P = R * I² [W]
+P = V²/R [W]
+
+
+
+
+Exemplo 5)
+P = 8 * 10²
+P = 8 * 100
+P = 800W
+
+
+
+Exemplo 6)
+P = V²/R
+P = 12²/3
+P = 144/3
+P = 48W
+t
+Exemplo 7)
+P = 16W
+V = ?
+V - P/I
+V = 16/2
+V = 8V
+
+1) Watts
+2) 
+3)
+
+b) V = 2V
+I = 0,2 A
+P = 2 * 0,2
+p = 0,4 W
+R = 2/0,2
+R = 10
+
+c) I = 25 mA
+P = 0,3 W
+V = 12
+R = 480
+
+V = P/I
+V = 0,3 / 0,025
+V = 12
+
+R = 12/0,025
+R = 480
+
+
+d)
+V = 10V
+R = 0,04
+I = 250
+P = 2,5kW
+
+R = 10² / 2500
+R = 100 / 2500
+R = 0,04
+
+I = 2500 / 10
+I = 250 
+
+
+
+e) V = 12V
+R = 4 ( símbolo do kratos)
+I = 3A
+P = 36W
+
+R = 12/3
+R = 4
+
+P = 12 * 3
+P = 36
+
+
+f) V = 1V
+R = 5 (símbolo do kratos)
+I = 0,200A
+P = 200mW
+
+I= 0,200/1
+
+R = 1/0,2
+R = 5
+
+
