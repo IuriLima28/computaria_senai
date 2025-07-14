@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(206, 49, 49);
+
+
+}
+.titulo{
+    text-decoration: underline;
+    text-align: center;
+
+}
+.decoracao{
+    height: 300px;
+    border-radius: 10px;
+}
+.ranking{
+    background-color: rgb(0, 0, 0);
+    border: 10px;
+    color: white;
+    border-radius: 30px;
+    margin: 10px;
+    align-items: center;
+
+
+
+}
+.logo{
+    height: 100px;
+    float:left;
+    border-radius: 10px;
+}
+.logo2{
+    height: 100px;
+    float:left;
+    border-radius: 10px;
+}
+.ficha{
+    height: 100px;
+
+    border-radius: 25px;
+}
+.fundo{
+    background-color: rgb(59, 59, 59);
+    height: 500px;
+}
