@@ -1,0 +1,35 @@
+body{
+    background-color: pink;
+}
+
+#jogo{
+    background-color: white;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+button{
+    border-radius: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border: 0px;
+    background-color: rgb(236, 236, 236);
+    font-family:'Times New Roman', Times, serif;
+
+}
+#contador{
+    background-color:rgb(253, 246, 237);
+    font-size: 20px;
+    background-image: url(papel.jpg);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    padding-bottom: 30px;
+    margin-right: 500px;
+    margin-left: 500px;
+    padding-left: 50px;
+}
